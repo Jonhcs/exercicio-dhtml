@@ -1,4 +1,7 @@
-function cadastraPessoas() {
+
+
+
+function cadastraPessoas(event) {
     event.preventDefault()
     
     let name = document.getElementById("name").value;
@@ -13,8 +16,8 @@ function cadastraPessoas() {
     html += "<td>" + telefone + "</td>";
     html += "</tr>";
     
-    document.getElementById("table").addEventListener("click", function(event){
-    });
+    document.getElementById("table").innerHTML += html;
+    
     let name = document.getElementById("name").value = "";
     let sobrenome = document.getElementById("sobrenome").value = "";
     let cpf = document.getElementById("cpf").value  = "" ;
