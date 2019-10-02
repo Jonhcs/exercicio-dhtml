@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center; background-color: #cccccc">
+         <form>
+            First name:<br>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome"><br>
+            Last name:<br>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu Sobrenome"><br>
+            Cpf:<br>
+                <input type="text" name="cpf"  id="cpf" placeholder="Digite seu Cpf"><br>
+            Telefone:<br>
+                <input type="tel" name="telefone" id="telefone" placeholder="Digite seu Telefone"><br><br>
+                <button type="submit" onclick="cadastraPessoas()" >Cadastrar</button><br>
+        </form>
+    </div>
+    <fieldset  >
+        <legend>Campos adicionados</legend>
+            <table border="1" id="table">
+                <thead >
+                    <tr>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>cpf</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+            </table>
+    </fieldset>
+            
+    <script src="/home/jhonatan/exercicios/dhtml/js/index.js" ></script>
+</body>
+</html>
