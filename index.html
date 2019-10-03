@@ -11,17 +11,27 @@
          <form>
             First name:<br>
                 <input type="text" name="name" id="name" placeholder="Digite seu nome"><br>
-                <button type="submit" onclick="cadastra()" >Cadastrar</button>
+            Last name:<br>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu Sobrenome"><br>
+            Cpf:<br>
+                <input type="text" name="cpf"  id="cpf" placeholder="Digite seu Cpf"><br>
+            Telefone:<br>
+                <input type="tel" name="telefone" id="telefone" placeholder="Digite seu Telefone"><br>
+            <hr>
+            <div>
+                <input type="button" value="Cadastrar" onclick="cadastraPessoas()"><br>
+            </div>
         </form>
     </div>
-    <fieldset  >
+    <fieldset>
         <legend>Campos adicionados</legend>
-            <table id="table_name">
-                <thead>
+            <table id="table_pessoa">
                     <tr>
-                        <th>Nome</th>
+                        <td>Nome</td>
+                        <td>Sobrenome</td>
+                        <td>Cpf</td>
+                        <td>Telefone</td>
                     </tr>
-                </thead>
             </table>
     </fieldset>
             
