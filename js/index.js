@@ -7,7 +7,7 @@ function cadastraPessoas() {
     let telefone = document.getElementById("telefone").value;
 
     
-    let html = "<tr><td>" + name + "</td><td>" + sobrenome + "</td></tr>";
+    let html = "<tr><td>" + name + "</td><td>" + sobrenome + "</td><td>" + cpf  + "</td><td>" + telefone + "</td></tr>";
     
     
     document.getElementById("name").value = "";
