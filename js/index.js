@@ -1,25 +1,10 @@
-
-
-
-function cadastraPessoas(event) {
-    event.preventDefault()
-    
+function cadastra(event) {
+    event.preventdefault()
     let name = document.getElementById("name").value;
-    let sobrenome = document.getElementById("sobrenome").value;
-    let cpf = document.getElementById("cpf").value;
-    let telefone = document.getElementById("telefone").value;
-
-    let html = "<tr>";
-    html += "<td>" + name + "</td>";
-    html += "<td>" + sobrenome + "</td>";
-    html += "<td>" + cpf + "</td>";
-    html += "<td>" + telefone + "</td>";
-    html += "</tr>";
+    alert(name)
+    let html = "<tbody><tr><td>" + name + "</td></tr></tbody>>";
     
-    document.getElementById("table").innerHTML += html;
+    document.getElementById("table_name").innerHTML += html;
     
-    let name = document.getElementById("name").value = "";
-    let sobrenome = document.getElementById("sobrenome").value = "";
-    let cpf = document.getElementById("cpf").value  = "" ;
-    let telefone = document.getElementById("telefone").value  = "";
+    document.getElementById("name").value = "";
 };
